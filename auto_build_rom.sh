@@ -68,13 +68,12 @@ make clobber && make clean
 
 echo ""
 echo ""
-echo -e "${bldgrn}  Building $my_device, $device_1, $device_2, $device_3, $device_4, $device_5, $device_6, $device_7 now "  >&2
+echo -e "${bldgrn}  Building ${device[1]}, ${device[2]}, ${device[3]} now "  >&2
 echo ""
 echo ""
-. build/envsetup.sh && brunch $device_1 && brunch $device_2 && brunch $device_3 && brunch $device_4 
-. build/envsetup.sh && brunch $device_5 && brunch $device_6 && brunch $device_7
 
-
+# Only 4 devices can be built on one line, causes errors if more are added /use another line for more devices!
+. build/envsetup.sh && brunch ${device[1]} && brunch ${device[2]} && brunch ${device[3]}
 
 # Compilation complete
 tput bold
