@@ -75,6 +75,9 @@ echo ""
 # Only 4 devices can be built on one line, causes errors if more are added /use another line for more devices!
 . build/envsetup.sh && brunch ${device[1]} && brunch ${device[2]} && brunch ${device[3]}
 
+#Run ftp.sh to upload roms to AndroidFileHost.com
+source ftp.sh
+
 # Compilation complete
 tput bold
 tput setaf 1
