@@ -1,7 +1,5 @@
 #!/bin/sh
 #configs
-fullpath=$(pwd)'/out/target/product/'
-rompath=$(pwd)
 COUNTER=1
 source build_rom.conf
 tput reset
