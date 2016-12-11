@@ -14,11 +14,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#Load Config File
+source build_rom.conf
+
+# cd to roms top root dir
+cd /home/aclegg2011/Android-dev/rr/7.1/
 
 # No scrollback buffer
 echo -e '\0033\0143'
-
-
 
 # Get intial time of script startup
 res1=$(date +%s.%N)
@@ -40,6 +43,7 @@ bldblu=${txtbld}$(tput setaf 4) # Bold blue
 bldcya=${txtbld}$(tput setaf 6) # Bold cyan
 normal='tput sgr0'
 
+cd 
 
 tput bold
 tput setaf 1
@@ -51,9 +55,6 @@ echo -e ""
 echo -e ""
 
 sleep 1s
-
-#Load Config File
-source build_rom.conf
 
 echo ""
 echo ""
