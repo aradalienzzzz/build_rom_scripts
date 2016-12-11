@@ -64,7 +64,7 @@ echo ""
 echo -e "${bldgrn}  Cleaning before starting build... "
 echo ""
 echo ""
-make clobber && clean
+make clobber && make clean
 
 echo ""
 echo ""
