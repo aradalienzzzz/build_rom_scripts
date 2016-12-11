@@ -18,7 +18,11 @@
 source build_rom.conf
 
 # cd to roms top root dir
-cd /home/aclegg2011/Android-dev/rr/7.1/
+cd /home/aclegg2011/Android-dev/rr/7.1
+
+# use CCACHE, disable NINJA
+export USE_CCACHE=1
+export USE_NINJA=false
 
 # No scrollback buffer
 echo -e '\0033\0143'
