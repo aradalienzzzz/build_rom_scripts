@@ -26,8 +26,6 @@ echo -e '\0033\0143'
 # Get intial time of script startup
 res1=$(date +%s.%N)
 
-
-
 # Specify colors for shell
 red='tput setaf 1'              # red
 green='tput setaf 2'            # green
@@ -42,8 +40,6 @@ bldgrn=${txtbld}$(tput setaf 2) # Bold green
 bldblu=${txtbld}$(tput setaf 4) # Bold blue
 bldcya=${txtbld}$(tput setaf 6) # Bold cyan
 normal='tput sgr0'
-
-cd 
 
 tput bold
 tput setaf 1
