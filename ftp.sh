@@ -12,6 +12,7 @@ FILENAME=$(ls R*.zip)
 FILESIZE=$(stat -c%s R*.zip)
 echo "Size of $FILENAME = $FILESIZE bytes."
 echo ""
+echo ""
 ftp -n -v $HOST <<END_SCRIPT
 user $USER $PASSWD
 binary
