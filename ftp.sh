@@ -4,8 +4,8 @@ COUNTER=1
 source build_rom.conf
 tput reset
 
-
-while [ $COUNTER -lt 4 ]; do
+# increase -lt+1 depending on how many devices being built, ie. 6 devices = -lt 7
+while [ $COUNTER -lt 5 ]; do
 FILEPATH=$fullpath"${device[COUNTER]}"
 cd $FILEPATH
 FILENAME=$(ls R*.zip)
