@@ -19,6 +19,8 @@ tick
 put $FILENAME
 quit
 END_SCRIPT
+cp -R $FILENAME /home/aclegg2011/Android-dev/roms/$FILENAME
+echo ""
 cd $rompath
 let COUNTER=COUNTER+1
 done
